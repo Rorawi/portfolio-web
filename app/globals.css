@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme inline {
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 } 
@@ -10,7 +10,7 @@
     --background: #101010;
     --foreground: #ededed;
   }
-}
+} */
 
 @layer base {
   *,
@@ -42,8 +42,8 @@ html {
 .text-secondary {
   color: #5f5f5f;
 }
-
+/* 
 body {
   background-color: var(--color-background);
   color: var(--color-foreground);
-}
+} */

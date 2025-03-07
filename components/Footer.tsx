@@ -36,7 +36,7 @@ const Footer = () => {
 										href="mailto:winifredasante15@gmail.com"
 										target="_blank"
 										rel="noopener noreferrer"
-										className="hover:text-red-400 transition-colors duration-300 flex items-center gap-2"
+										className="hover:text-red-400  transition-colors duration-300 flex items-center gap-2"
 									>
 										<HiOutlineMail size={24} />
 
@@ -66,52 +66,6 @@ const Footer = () => {
 					</div>
 				</div>
 				{/* <p className="text-sm mt-5 text-gray-600">Designed & Built with ❤️ by Winifred</p> */}
-			</footer>
-			<footer className="container mx-auto mb-5 hidden">
-				<div className="px-5 lg:px-20">
-					<div className="bg-black/80 text-white text-center py-12 rounded-lg">
-						<div className="flex justify-center gap-6 mt-4">
-							<a
-								href="https://facebook.com"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="hover:text-blue-500 transition-colors duration-300"
-							>
-								<FaFacebook size={24} />
-							</a>
-							<a
-								href="https://twitter.com"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="hover:text-blue-400 transition-colors duration-300"
-							>
-								<FaTwitter size={24} />
-							</a>
-							<a
-								href="https://linkedin.com"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="hover:text-blue-700 transition-colors duration-300"
-							>
-								<FaLinkedin size={24} />
-							</a>
-							<a
-								href="https://instagram.com"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="hover:text-pink-500 transition-colors duration-300"
-							>
-								<FaInstagram size={24} />
-							</a>
-						</div>
-						<p className="text-sm text-center mt-4">
-							&copy; {new Date().getFullYear()} Winifred. All rights reserved.
-						</p>
-					</div>
-					<p className="text-sm text-center font-semibold mt-4">
-						Designed & Built with ❤️ by Winifred
-					</p>
-				</div>
 			</footer>
 		</div>
 	);

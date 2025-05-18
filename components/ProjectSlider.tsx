@@ -9,18 +9,22 @@ import "swiper/css/navigation";
 
 import Image from "next/image";
 import sdiaa from "../components/images/sdiaa.png";
+import plantguard from "../components/images/plantguard.png";
+
 import farmerApp from "../components/images/farmerapp.png";
+import foodWebsite from "../components/images/hungryimg.png";
 import reactIcon from "../components/images/react.svg";
 import nextIcon from "../components/images/nextjs.svg";
 import tailwindIcon from "../components/images/tailwind.svg";
-import nodeIcon from "../components/images/nodejs.svg";
-import javascriptIcon from "../components/images/js.svg";
 import htmlIcon from "../components/images/html.svg";
 import cssIcon from "../components/images/css3.svg";
+import javascriptIcon from "../components/images/js.svg"
 import sassIcon from "../components/images/sass.svg";
 import bootstrapIcon from "../components/images/bootstrap.svg";
+import firebaseIcon from "../components/images/firebase.svg"
 
-import { FaGithub } from "react-icons/fa";
+
+import { FaArrowLeft,  FaArrowRight, FaGithub,  } from "react-icons/fa";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { link } from "fs";
 import { useTheme } from "./ThemeProvider";
@@ -38,18 +42,10 @@ const ProjectSlider = () => {
 			link: "https://s-diaa.org/",
 		},
 		{
-			id: 2,
-			name: "Farmer App",
-			image: farmerApp,
-			stacks: [reactIcon, cssIcon],
-			github: "",
-			link: "https://s-diaa.org/",
-		},
-		{
-			id: 2,
-			name: "Food Website",
-			image: sdiaa,
-			stacks: [reactIcon, tailwindIcon],
+			id: 1,
+			name: "Plant GuardAI",
+			image: plantguard,
+			stacks: [nextIcon, firebaseIcon,  tailwindIcon],
 			github: "",
 			link: "https://s-diaa.org/",
 		},
@@ -71,7 +67,7 @@ const ProjectSlider = () => {
 						prevEl: ".swiper-button-prev",
 					}}
 					grabCursor={true}
-					className="w-full"
+					className="w-full h-screen max-h-[470px]"
 				>
 					{projects.map((project) => {
 						return (
@@ -129,7 +125,17 @@ const ProjectSlider = () => {
 							</SwiperSlide>
 						);
 					})}
+
+					<div className="">
+				<div className="swiper-button-prev">
+					<FaArrowLeft className="text-black" />
+				</div>
+				<div className="swiper-button-next">
+					<FaArrowRight className="text-black"/>
+				</div>
+					</div>
 				</Swiper>
+
 			</div>
 		</section>
 	);

@@ -47,3 +47,47 @@ body {
   background-color: var(--color-background);
   color: var(--color-foreground);
 } */
+
+
+.swiper-button-next:after, 
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-prev:after ,
+.swiper-rtl .swiper-button-next:after {
+    content: '';
+    display: none;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    top: initial !important;
+    bottom: 0;
+    width: initial !important;
+    height: initial !important;
+    background-color: var(--container-color);
+    border: 2px solid black;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    color: var(--first-color);
+}
+
+.swiper-button-prev {
+    left: calc(50% - 3rem)!important;
+    top: 430px!important;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.swiper-button-next {
+    right: calc(50% - 3rem)!important;
+    top: 430px!important;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    left: auto;
+    right: calc(50% - 3rem);
+}
+.swiper-button-next::before {
+    right: calc(50% - 3rem);
+}

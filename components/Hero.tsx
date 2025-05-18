@@ -8,6 +8,7 @@ import { HiOutlineDownload } from "react-icons/hi";
 import Image from "next/image";
 import * as motion from "motion/react-client";
 import { useTheme } from "./ThemeProvider";
+import Link from "next/link";
 
 const Hero = () => {
 	const theme = useTheme();
@@ -65,10 +66,16 @@ const Hero = () => {
 							>
 								Get In Touch
 							</a>
-							<button className="px-2 py-2 cursor-pointer">
+
+							
+							<a
+							href="/WinifredAsanteResume.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="px-2 py-2 cursor-pointer">
 								<span className="me-2">My Resume</span>
 								<HiOutlineDownload className="inline-block" />
-							</button>
+							</a>
 						</div>
 					</div>
 

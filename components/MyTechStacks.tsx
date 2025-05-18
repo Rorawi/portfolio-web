@@ -102,7 +102,7 @@ const MyTechStacks = () => {
 					<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
 						{stacks.map((stack) => (
 							<div className="h-40 flex flex-col items-center justify-center" key={stack.name}>
-							<div  className="flex flex-col items-center space-x-4 group transition-colors duration-500 ease-in-out">
+							<div  className="flex flex-col justify-center items-center group transition-colors duration-500 ease-in-out">
 								<Image src={stack.icon} alt={stack.name} width={stack.width} height={stack.height} className={`${theme === 'dark' ? "": " md:saturate-0 md:group-hover:saturate-100"}`}/>
 								<span className="text-xl">{stack.name}</span>
 							</div>

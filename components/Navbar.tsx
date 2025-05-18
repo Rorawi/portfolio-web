@@ -48,7 +48,11 @@ const Navbar = () => {
 						<a href="#portfolio" className="font-poppin font-semibold">
 							Works
 						</a>
-						<a href="#" target="_blank" className="font-poppin font-semibold">
+						<a
+							href="/WinifredAsanteResume.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+						className="font-poppin font-semibold">
 							Resume
 						</a>
 					</div>

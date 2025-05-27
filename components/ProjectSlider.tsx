@@ -1,7 +1,7 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -10,23 +10,14 @@ import "swiper/css/navigation";
 import Image from "next/image";
 import sdiaa from "../components/images/sdiaa.png";
 import plantguard from "../components/images/plantguard1.png";
-
-import farmerApp from "../components/images/farmerapp.png";
-import foodWebsite from "../components/images/hungryimg.png";
 import reactIcon from "../components/images/react.svg";
 import nextIcon from "../components/images/nextjs.svg";
 import tailwindIcon from "../components/images/tailwind.svg";
-import htmlIcon from "../components/images/html.svg";
-import cssIcon from "../components/images/css3.svg";
-import javascriptIcon from "../components/images/js.svg"
-import sassIcon from "../components/images/sass.svg";
-import bootstrapIcon from "../components/images/bootstrap.svg";
 import firebaseIcon from "../components/images/firebase.svg"
 
 
 import { FaArrowLeft,  FaArrowRight, FaGithub,  } from "react-icons/fa";
 import { MdOutlineArrowOutward } from "react-icons/md";
-import { link } from "fs";
 import { useTheme } from "./ThemeProvider";
 
 const ProjectSlider = () => {

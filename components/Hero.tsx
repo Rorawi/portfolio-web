@@ -8,7 +8,6 @@ import { HiOutlineDownload } from "react-icons/hi";
 import Image from "next/image";
 import * as motion from "motion/react-client";
 import { useTheme } from "./ThemeProvider";
-import Link from "next/link";
 
 const Hero = () => {
 	const theme = useTheme();

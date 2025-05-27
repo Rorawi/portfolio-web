@@ -6,14 +6,8 @@ import ProjectSlider from './ProjectSlider';
 import sdiaa from "../components/images/sdiaa.png";
 import farmerApp  from "../components/images/farmerapp.png";
 import reactIcon from "../components/images/react.svg";
-import nextIcon from "../components/images/nextjs.svg";
 import tailwindIcon from "../components/images/tailwind.svg";
-import nodeIcon from "../components/images/nodejs.svg";
-import javascriptIcon from "../components/images/js.svg";
-import htmlIcon from "../components/images/html.svg";
 import cssIcon from "../components/images/css3.svg";
-import sassIcon from "../components/images/sass.svg";
-import bootstrapIcon from "../components/images/bootstrap.svg";
 
 const projects = [
     {

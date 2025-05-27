@@ -12,8 +12,6 @@ import logoBlack from "./images/wini-black.png";
 
 import { useState } from "react";
 import { useTheme } from "./ThemeProvider";
-import { HiOutlineSun } from "react-icons/hi";
-import { HiOutlineMoon } from "react-icons/hi";
 
 const Navbar = () => {
 	const theme = useTheme();

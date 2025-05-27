@@ -1,10 +1,6 @@
-import { div } from "framer-motion/client";
 import {
-	FaFacebook,
-	FaTwitter,
 	FaLinkedin,
-	FaInstagram,
-	FaMailBulk,
+	FaInstagram
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import Image from "next/image";

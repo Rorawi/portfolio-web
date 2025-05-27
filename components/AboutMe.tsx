@@ -1,8 +1,5 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import bgpattern from "../components/images/bgpattern.avif";
-import { MdOutlineArrowOutward } from "react-icons/md";
-import Image from "next/image";
 
 
 const Hero = () => {
@@ -13,7 +10,9 @@ const Hero = () => {
 				<div className="md:max-w-5xl">
 					<div>
 						<p className="text-[40px] md:text-7xl  font-bold dark:text-white text-black text-center">
+							{/* eslint-disable react/no-unescaped-entities */}
 							I'm Winifred <span className="text-gradient"><br />A Frontend Developer</span>
+							{/* eslint-disable react/no-unescaped-entities */}
 						</p>
 						<p className=" font-normal py-5 md:py-10 text-center text-white max-w-xl mx-auto">
                         I’m passionate about creating responsive and interactive web applications and apps.

@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 
 import Image from "next/image";
 import sdiaa from "../components/images/sdiaa.png";
-import plantguard from "../components/images/plantguard.png";
+import plantguard from "../components/images/plantguard1.png";
 
 import farmerApp from "../components/images/farmerapp.png";
 import foodWebsite from "../components/images/hungryimg.png";

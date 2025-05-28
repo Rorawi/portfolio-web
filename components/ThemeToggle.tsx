@@ -2,9 +2,7 @@
 import { useTheme } from "./ThemeProvider";
 
 const ThemeToggle = () => {
-  const themeContext = useTheme();
-  const theme = themeContext.theme ?? themeContext.currentTheme;
-  const toggleTheme = themeContext.toggleTheme;
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <label className="flex items-center cursor-pointer">

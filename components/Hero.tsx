@@ -85,7 +85,7 @@ const Hero = () => {
 								alt="scroll down"
 								width={50}
 								height={50}
-								className={`${theme === "dark" ? "filter invert" : ""}`}
+								className={`${theme?.theme === "dark" ? "filter invert" : ""}`}
 							/>
 						</a>
 					</div>

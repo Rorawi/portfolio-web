@@ -29,7 +29,7 @@ const Navbar = () => {
 		<div className="container mx-auto">
 			<div className="px-5 lg:px-20">
 		<header className="flex justify-between items-center bg-transparent py-4 relative z-50">
-			{theme === 'dark' ? (
+			{theme.theme === 'dark' ? (
 				<Image src={logoBlack} alt="logo" width={100} height={100} />
 			) : (
 				<Image src={logo} alt="logo" width={100} height={100} />

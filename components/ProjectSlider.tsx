@@ -70,7 +70,7 @@ const ProjectSlider = () => {
 											alt={project.name}
 											layout="responsive"
 											objectFit="cover"
-											className={`w-full h-full rounded-lg object-cover ${theme === 'dark' ? "": "md:saturate-0 md:group-hover:saturate-100"}`}
+											className={`w-full h-full rounded-lg object-cover ${(theme?.theme === 'dark') ? "" : "md:saturate-0 md:group-hover:saturate-100"}`}
 										/>
 									</div>
 									<div className="mt-4">

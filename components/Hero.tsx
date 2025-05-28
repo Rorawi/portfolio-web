@@ -35,7 +35,7 @@ const Hero = () => {
 									width={80}
 									height={80}
 									objectFit="cover"
-									className={`${theme === 'dark' ? "": "grayscale-100 group-hover:grayscale-0"} `}
+									className={`${theme?.theme === 'dark' ? "" : "grayscale-100 group-hover:grayscale-0"} `}
 								/>
 							</div>
 						</motion.div>
@@ -51,7 +51,7 @@ const Hero = () => {
 						<p className="text-[30px] md:text-5xl font-medium text-center mb-2">
 							UX & Frontend Engineer
 						</p>
-						<p className={`text-center ${theme === "dark" ? "text-white/80" : "text-secondary"}`}>
+						<p className={`text-center ${theme?.theme === "dark" ? "text-white/80" : "text-secondary"}`}>
 							{" "}
 							I specialize in crafting engaging user experiences and beautiful,
 							responsive interfaces, with a strong focus on user-centered design
@@ -61,7 +61,7 @@ const Hero = () => {
 						<div className="mt-6 flex flex-col md:flex-row justify-center space-x-4">
 							<a
 								href="mailto:winifredasante15@gmail.com"
-								className={`px-5 py-2 rounded-full cursor-pointer mb-2 md:mb-0 	${theme === "dark" ? "bg-white text-black" : " bg-black text-white "}`}
+								className={`px-5 py-2 rounded-full cursor-pointer mb-2 md:mb-0 	${theme?.theme === "dark" ? "bg-white text-black" : " bg-black text-white "}`}
 							>
 								Get In Touch
 							</a>

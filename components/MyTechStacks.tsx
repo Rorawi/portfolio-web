@@ -103,7 +103,8 @@ const MyTechStacks = () => {
 						{stacks.map((stack) => (
 							<div className="h-40 flex flex-col items-center justify-center" key={stack.name}>
 							<div  className="flex flex-col justify-center items-center group transition-colors duration-500 ease-in-out">
-								<Image src={stack.icon} alt={stack.name} width={stack.width} height={stack.height} className={`${theme === 'dark' ? "": " md:saturate-0 md:group-hover:saturate-100"}`}/>
+								<Image src={stack.icon} alt={stack.name} width={stack.width} height={stack.height} 
+								className={`${(typeof theme === 'string' && theme === 'dark') ? "" : " md:saturate-0 md:group-hover:saturate-100"}`}/>
 								<span className="text-xl">{stack.name}</span>
 							</div>
 							</div>

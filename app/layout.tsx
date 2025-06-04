@@ -9,7 +9,7 @@ const dmsans = DM_Sans({
 
 
 export const metadata: Metadata = {
-  title: "Wini's Portfolio",
+  title: "Winifred Asante | Portfolio",
   description: "Winifred Asante's Portfolio",
 };
 

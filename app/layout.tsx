@@ -11,6 +11,7 @@ const dmsans = DM_Sans({
 export const metadata: Metadata = {
   title: "Winifred Asante | Portfolio",
   description: "Winifred Asante's Portfolio",
+  
 };
 
 export default function RootLayout({

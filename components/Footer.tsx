@@ -27,7 +27,7 @@ const Footer = () => {
 								</p>
 							</div>
 							<div>
-								<div className="grid grid-cols-2 md:grid-cols-3 gap-10">
+								<div className="grid grid-cols-2 lg:flex lg:justify-between lg:items-center gap-10">
 									<a
 										href="mailto:winifredasante15@gmail.com"
 										target="_blank"

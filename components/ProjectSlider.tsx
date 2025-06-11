@@ -9,16 +9,17 @@ import "swiper/css/navigation";
 
 import Image from "next/image";
 import sdiaa from "../components/images/sdiaa.png";
-import plantguard from "../components/images/plantguard1.png";
+import plantguard from "../components/images/plantguard2.png";
 import reactIcon from "../components/images/react.svg";
 import nextIcon from "../components/images/nextjs.svg";
 import tailwindIcon from "../components/images/tailwind.svg";
-import firebaseIcon from "../components/images/firebase.svg"
+import firebaseIcon from "../components/images/firebase.svg";
+import { GoDotFill } from "react-icons/go";
 
-
-import { FaArrowLeft,  FaArrowRight, FaGithub,  } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight, FaGithub } from "react-icons/fa";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { useTheme } from "./ThemeProvider";
+import { on } from "events";
 
 const ProjectSlider = () => {
 	const theme = useTheme();
@@ -31,14 +32,16 @@ const ProjectSlider = () => {
 			stacks: [reactIcon, tailwindIcon],
 			github: "",
 			link: "https://s-diaa.org/",
+			ongoing: false,
 		},
 		{
 			id: 1,
-			name: "Plant GuardAI",
+			name: "PlantGuard",
 			image: plantguard,
-			stacks: [nextIcon, firebaseIcon,  tailwindIcon],
+			stacks: [nextIcon, firebaseIcon, tailwindIcon],
 			github: "",
-			link: "https://s-diaa.org/",
+			link: "https://plantguard-pink.vercel.app/",
+			ongoing: true,
 		},
 	];
 	return (
@@ -64,17 +67,33 @@ const ProjectSlider = () => {
 						return (
 							<SwiperSlide key={project.id} className="flex justify-center">
 								<div className="group">
-									<div className="w-full h-[250px] rounded-lg overflow-hidden pt-3 px-3 pb-4  bg-gray-100">
+									<div className="w-full rounded-lg overflow-hidden pt-3 px-3 pb-4  bg-gray-100">
 										<Image
 											src={project.image}
 											alt={project.name}
 											layout="responsive"
 											objectFit="cover"
-											className={`w-full h-full rounded-lg object-cover ${(theme?.theme === 'dark') ? "" : "md:saturate-0 md:group-hover:saturate-100"}`}
+											className={`w-full h-full max-h-[200px] rounded-lg object-cover ${
+												theme?.theme === "dark"
+													? ""
+													: "md:saturate-0 md:group-hover:saturate-100"
+											}`}
 										/>
 									</div>
 									<div className="mt-4">
-										<h6 className="mb-2 font-bold">{project.name}</h6>
+										<div className="flex justify-between items-center">
+											<h6 className="mb-2 md:text-xl font-bold">
+												{project.name}
+											</h6>
+											{project.ongoing && (
+												<div className="flex items-center gap-1 ">
+													<GoDotFill className="text-yellow-600" />
+													<span className="text-yellow-600">
+														Ongoing Project
+													</span>
+												</div>
+											)}
+										</div>
 
 										<div className="flex space-x-2 justify-between">
 											<div className="flex space-x-2 mt-2">
@@ -118,15 +137,14 @@ const ProjectSlider = () => {
 					})}
 
 					<div className="">
-				<div className="swiper-button-prev">
-					<FaArrowLeft className="text-black" />
-				</div>
-				<div className="swiper-button-next">
-					<FaArrowRight className="text-black"/>
-				</div>
+						<div className="swiper-button-prev">
+							<FaArrowLeft className="text-black" />
+						</div>
+						<div className="swiper-button-next">
+							<FaArrowRight className="text-black" />
+						</div>
 					</div>
 				</Swiper>
-
 			</div>
 		</section>
 	);

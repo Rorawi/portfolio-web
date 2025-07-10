@@ -41,7 +41,7 @@ const ProjectSlider = () => {
 			stacks: [nextIcon, firebaseIcon, tailwindIcon],
 			github: "",
 			link: "https://plantguard-pink.vercel.app/",
-			ongoing: true,
+			ongoing: false,
 		},
 	];
 	return (

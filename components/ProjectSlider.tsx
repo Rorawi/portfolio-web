@@ -47,33 +47,34 @@ const ProjectSlider = () => {
 	return (
 		<section className="mt-6">
 			<div className="">
-				<Swiper
-					modules={[Navigation]}
-					spaceBetween={20}
-					slidesPerView={1}
-					breakpoints={{
-						640: { slidesPerView: 1 },
-						768: { slidesPerView: 2 },
-						1024: { slidesPerView: 2 },
-					}}
-					navigation={{
-						nextEl: ".swiper-button-next",
-						prevEl: ".swiper-button-prev",
-					}}
-					grabCursor={true}
-					className="w-full h-screen max-h-[600px]"
-				>
-					{projects.map((project) => {
-						return (
-							<SwiperSlide key={project.id} className="flex justify-center">
+				<div className="relative">
+  <Swiper
+    modules={[Navigation]}
+    spaceBetween={20}
+    slidesPerView={1}
+    breakpoints={{
+      640: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 2 },
+    }}
+    navigation={{
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    }}
+    grabCursor={true}
+    className="w-full lg:h-screen lg:max-h-[600px]"
+  >
+    {projects.map((project) => {
+      return (
+       <SwiperSlide key={project.id} className="flex justify-center">
 	<div className="group">
-		<div className="w-full rounded-2xl overflow-hidden pt-5 px-5 pb-6 bg-gray-100">
+		<div className="w-full rounded-xl md:rounded-2xl overflow-hidden p-4 md:p-5  bg-gray-100">
 			<Image
 				src={project.image}
 				alt={project.name}
 				width={400} // Set a fixed width
 				height={350} // Set a fixed height
-				className={`w-full h-[350px] rounded-2xl object-cover ${
+				className={`w-full h-[350px] rounded-xl md:rounded-2xl object-cover ${
 					theme?.theme === "dark"
 						? ""
 						: "md:saturate-0 md:group-hover:saturate-100"
@@ -133,18 +134,19 @@ const ProjectSlider = () => {
 									</div>
 								</div>
 							</SwiperSlide>
-						);
-					})}
+      );
+    })}
+  </Swiper>
 
-					<div className="">
-						<div className="swiper-button-prev">
-							<FaArrowLeft className="text-black" />
-						</div>
-						<div className="swiper-button-next">
-							<FaArrowRight className="text-black" />
-						</div>
-					</div>
-				</Swiper>
+  {/* Navigation buttons positioned outside with proper z-index */}
+  <div className="swiper-button-prev absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-50 bg-white/90 hover:bg-white rounded-full p-2 md:p-3 shadow-lg hidden md:flex items-center justify-center">
+    <FaArrowLeft className="text-black text-sm md:text-lg" />
+  </div>
+  <div className="swiper-button-next absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-50 bg-white/90 hover:bg-white rounded-full p-2 md:p-3 shadow-lg hidden md:flex items-center justify-center">
+    <FaArrowRight className="text-black text-sm md:text-lg" />
+  </div>
+</div>
+
 			</div>
 		</section>
 	);

@@ -84,6 +84,23 @@ body {
     border-radius: 8px;
 }
 
+
+@media  (max-width: 768px) {
+  .swiper-button-prev {
+    left: calc(50% - 3rem)!important;
+    top: 531px!important;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.swiper-button-next {
+    right: calc(50% - 3rem)!important;
+    top: 531px!important;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+}
+
 .swiper-button-next, .swiper-rtl .swiper-button-prev {
     left: auto;
     right: calc(50% - 3rem);

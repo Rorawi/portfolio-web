@@ -67,13 +67,13 @@ const ProjectSlider = () => {
 						return (
 							<SwiperSlide key={project.id} className="flex justify-center">
 	<div className="group">
-		<div className="w-full rounded-lg overflow-hidden pt-3 px-3 pb-4 bg-gray-100">
+		<div className="w-full rounded-2xl overflow-hidden pt-5 px-5 pb-6 bg-gray-100">
 			<Image
 				src={project.image}
 				alt={project.name}
 				width={400} // Set a fixed width
 				height={350} // Set a fixed height
-				className={`w-full h-[350px] rounded-lg object-cover ${
+				className={`w-full h-[350px] rounded-2xl object-cover ${
 					theme?.theme === "dark"
 						? ""
 						: "md:saturate-0 md:group-hover:saturate-100"

@@ -73,20 +73,20 @@ const MyTechStacks = () => {
 			width: 100,
 			height: 100
 		},
-		{
-			id: 15,
-			name: "Sass",
-			icon: sassIcon,
-			width: 135,
-			height: 135
-		},
-		{
-			id: 16,
-			name: "Bootstrap",
-			icon: bootstrapIcon,
-			width: 100,
-			height: 100,
-		}
+		// {
+		// 	id: 15,
+		// 	name: "Sass",
+		// 	icon: sassIcon,
+		// 	width: 135,
+		// 	height: 135
+		// },
+		// {
+		// 	id: 16,
+		// 	name: "Bootstrap",
+		// 	icon: bootstrapIcon,
+		// 	width: 100,
+		// 	height: 100,
+		// }
 	]
 	return (
 		<div className="max-w-[1300px] mx-auto" id="techstacks">
@@ -98,7 +98,7 @@ const MyTechStacks = () => {
 				<p className="text-[25px] md:text-4xl font-medium mb-8">
 					My Tech Stacks
 				</p>
-				<div className="p-6 md:p-12 rounded-lg border-2 border-gray-400 group">
+				<div className="p-6 md:p-9 rounded-2xl border-2 border-gray-400 group">
 					<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 						{stacks.map((stack) => (
 							<div className="h-40 flex flex-col items-center justify-center" key={stack.name}>

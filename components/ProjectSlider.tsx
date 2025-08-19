@@ -54,32 +54,31 @@ const ProjectSlider = () => {
 					breakpoints={{
 						640: { slidesPerView: 1 },
 						768: { slidesPerView: 2 },
-						1024: { slidesPerView: 4 },
+						1024: { slidesPerView: 2 },
 					}}
 					navigation={{
 						nextEl: ".swiper-button-next",
 						prevEl: ".swiper-button-prev",
 					}}
 					grabCursor={true}
-					className="w-full h-screen max-h-[470px]"
+					className="w-full h-screen max-h-[600px]"
 				>
 					{projects.map((project) => {
 						return (
 							<SwiperSlide key={project.id} className="flex justify-center">
-								<div className="group">
-									<div className="w-full rounded-lg overflow-hidden pt-3 px-3 pb-4  bg-gray-100">
-										<Image
-											src={project.image}
-											alt={project.name}
-											layout="responsive"
-											objectFit="cover"
-											className={`w-full h-full max-h-[200px] rounded-lg object-cover ${
-												theme?.theme === "dark"
-													? ""
-													: "md:saturate-0 md:group-hover:saturate-100"
-											}`}
-										/>
-									</div>
+	<div className="group">
+		<div className="w-full rounded-lg overflow-hidden pt-3 px-3 pb-4 bg-gray-100">
+			<Image
+				src={project.image}
+				alt={project.name}
+				width={400} // Set a fixed width
+				height={350} // Set a fixed height
+				className={`w-full h-[350px] rounded-lg object-cover ${
+					theme?.theme === "dark"
+						? ""
+						: "md:saturate-0 md:group-hover:saturate-100"
+				}`}
+			/>
 									<div className="mt-4">
 										<div className="flex justify-between items-center">
 											<h6 className="mb-2 md:text-xl font-bold">
@@ -130,6 +129,7 @@ const ProjectSlider = () => {
 												</a>
 											</div>
 										</div>
+									</div>
 									</div>
 								</div>
 							</SwiperSlide>

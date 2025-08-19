@@ -3,7 +3,7 @@ import ProjectSlider from "./ProjectSlider";
 
 const MyProjects = () => {
 	return (
-		<div id="portfolio">
+		<div id="portfolio" className="max-w-[1300px] mx-auto">
 			<div className="container mx-auto mt-20 mb-20">
                 <div className="px-5 lg:px-20">
 				<h6 className="mb-3">Works</h6>

@@ -40,7 +40,7 @@ const Navbar = () => {
 				onClick={toggleMobileNav}
 			/>
 
-			<div className="hidden lg:block">
+			<div className="hidden">
 				<div className="py-2 px-2 flex items-center justify-center gap-3 ms-8">
 					<div className="flex justify-center space-x-7">
 						<a href="#portfolio" className="font-poppin font-semibold">

@@ -89,7 +89,7 @@ const MyTechStacks = () => {
 		}
 	]
 	return (
-		<div className="" id="techstacks">
+		<div className="max-w-[1300px] mx-auto" id="techstacks">
 			<div className="container mx-auto mt-20 mb-40">
 			<div className="px-5 lg:px-20">
 			<h6 className="mb-3">
@@ -99,7 +99,7 @@ const MyTechStacks = () => {
 					My Tech Stacks
 				</p>
 				<div className="p-6 md:p-12 rounded-lg border-2 border-gray-400 group">
-					<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+					<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 						{stacks.map((stack) => (
 							<div className="h-40 flex flex-col items-center justify-center" key={stack.name}>
 							<div  className="flex flex-col justify-center items-center group transition-colors duration-500 ease-in-out">

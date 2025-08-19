@@ -12,7 +12,7 @@ import { useTheme } from "./ThemeProvider";
 const Hero = () => {
 	const theme = useTheme();
 	return (
-		<div className="h-[96vh] relative overflow-hidden">
+		<div className="h-[96vh] relative overflow-hidden max-w-[1300px] mx-auto">
 			<Navbar />
 
 			<div className="pb-16 px-5 md:px-20 flex flex-col justify-center items-center h-full">
@@ -51,7 +51,7 @@ const Hero = () => {
 						<p className="text-[30px] md:text-5xl font-medium text-center mb-2">
 							UX & Frontend Engineer
 						</p>
-						<p className={`text-center ${theme?.theme === "dark" ? "text-white/80" : "text-secondary"}`}>
+						<p className={`text-center text-lg ${theme?.theme === "dark" ? "text-white/80" : "text-secondary"}`}>
 							{" "}
 							I specialize in crafting engaging user experiences and beautiful,
 							responsive interfaces, with a strong focus on user-centered design
@@ -68,7 +68,7 @@ const Hero = () => {
 
 							
 							<a
-							href="/WinifredAsanteResume.pdf"
+							href="https://docs.google.com/document/d/1gFZPlYrHJEC5G5NSRwdQ7kcW-mcg4txbl8Kw5LLpC3M/edit?usp=drive_link"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="px-2 py-2 cursor-pointer">
